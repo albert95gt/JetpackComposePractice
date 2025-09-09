@@ -1,7 +1,7 @@
-package com.example.jetpackcomposepractice.composebles
+package com.example.jetpackcomposepractice.composebles.LazyColumnPractice
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
@@ -14,8 +14,7 @@ import androidx.compose.ui.unit.dp
 fun BasicLazyColumn(modifier: Modifier) {
     LazyColumn (
         modifier
-            .fillMaxSize()
-            .padding(20.dp),
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         items(10){ item ->
@@ -23,3 +22,4 @@ fun BasicLazyColumn(modifier: Modifier) {
         }
     }
 }
+
