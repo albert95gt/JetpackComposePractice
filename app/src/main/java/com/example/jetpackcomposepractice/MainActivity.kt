@@ -10,8 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcomposepractice.composebles.LazyColumnPractice.DynamicLazyColumn
-import com.example.jetpackcomposepractice.composebles.LazyColumnPractice.InteractiveLazyColumn
+import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.CardFilterLazyColumn
+import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.InteractiveLazyColumn
 import com.example.jetpackcomposepractice.ui.theme.JetpackComposePracticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposePracticeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    InteractiveLazyColumn(modifier = Modifier.padding(innerPadding))
+                    CardFilterLazyColumn(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
