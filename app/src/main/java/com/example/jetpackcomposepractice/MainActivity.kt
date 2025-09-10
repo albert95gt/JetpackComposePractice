@@ -14,6 +14,7 @@ import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.CardFil
 import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.InteractiveLazyColumn
 import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.SortedDetailLazyColumn
 import com.example.jetpackcomposepractice.composebles.lazyRowPractice.FruitCardLazyRow
+import com.example.jetpackcomposepractice.composebles.lazyRowPractice.SelectableLazyRow
 import com.example.jetpackcomposepractice.composebles.lazyRowPractice.SimpleLazyRow
 import com.example.jetpackcomposepractice.ui.theme.JetpackComposePracticeTheme
 
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposePracticeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    FruitCardLazyRow(modifier = Modifier.padding(innerPadding))
+                    SelectableLazyRow(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
