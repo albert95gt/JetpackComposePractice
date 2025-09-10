@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.CardFilterLazyColumn
 import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.InteractiveLazyColumn
 import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.SortedDetailLazyColumn
+import com.example.jetpackcomposepractice.composebles.lazyRowPractice.SimpleLazyRow
 import com.example.jetpackcomposepractice.ui.theme.JetpackComposePracticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposePracticeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    SortedDetailLazyColumn(modifier = Modifier.padding(innerPadding))
+                    SimpleLazyRow(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
