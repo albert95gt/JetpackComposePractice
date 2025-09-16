@@ -16,6 +16,9 @@ import com.example.jetpackcomposepractice.composebles.lazyColumnPractice.SortedD
 import com.example.jetpackcomposepractice.composebles.lazyRowPractice.FruitCardLazyRow
 import com.example.jetpackcomposepractice.composebles.lazyRowPractice.SelectableLazyRow
 import com.example.jetpackcomposepractice.composebles.lazyRowPractice.SimpleLazyRow
+import com.example.jetpackcomposepractice.composebles.stickyHederPractice.DynamicStickyHeaderList
+import com.example.jetpackcomposepractice.composebles.stickyHederPractice.MultiSectionStickyList
+import com.example.jetpackcomposepractice.composebles.stickyHederPractice.SimpleStickyHeaderList
 import com.example.jetpackcomposepractice.ui.theme.JetpackComposePracticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +28,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposePracticeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    SelectableLazyRow(modifier = Modifier.padding(innerPadding))
+                    DynamicStickyHeaderList(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
